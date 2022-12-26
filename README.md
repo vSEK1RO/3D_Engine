@@ -1,6 +1,8 @@
 # 3D_Engine
 >Данный проект представляет собой трехмерный движок, включающий в себя методы управления камерой, объектами, их отрисовкой на экран. Базируется на библиотеке __SFML__
+
 >This project is a three-dimensional engine that includes methods for controlling the camera, objects, and their drawing on the screen. Based on the __SFML__ library
+
 На данный момент реализовано / Currently implemented
 
 :white_check_mark: класс для работы с камерой / camera class
