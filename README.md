@@ -1,6 +1,6 @@
 # 3D_Engine
 
-### Скачать текущую версию / Download: [__v0.1__](https://github.com/vSEK1RO/3D_Engine/releases/tag/v0.1)
+### Скачать текущую версию / Download: [__v0.1__](https://github.com/vSEK1RO/3D_Engine/releases/download/v0.1/src.rar)
 
 >Данный проект представляет собой трехмерный движок, включающий в себя методы управления камерой, объектами, их отрисовкой на экран. Базируется на библиотеке __SFML__
 
