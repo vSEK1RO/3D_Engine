@@ -24,7 +24,7 @@
 Create an object of the Camera class, and then run the cameraInit() class constructor on a separate thread.
 Next, use the appropriate getter and setter methods to get the camera parameters (coordinates, view angle).
      
-     3D::Camera cam;
+     sf3D::Camera cam;
      sf::Thread camera(&sf3D::Camera::cameraInit, &cam);
      camera.launch();
 
