@@ -2,6 +2,7 @@
 #include "windows.h"
 #include <cmath>
 #include <iostream>
+
 namespace sf3D{
     class Camera{
 
@@ -13,8 +14,8 @@ namespace sf3D{
         float zPos=0.0;
         float vAngle=0.0;
         float hAngle=0.0;
-        float velocity=10.0;
-        float sensivity=0.8;
+        float velocity=1.0;
+        float sensivity=1.0;
 
     public:
 
@@ -23,8 +24,9 @@ namespace sf3D{
             sf::Mouse::setPosition(sf::Vector2i(1920/2,1080/2));
             std::cout.setf(std::ios::fixed);
             std::cout.precision(1); 
+            sf::Clock clock;
             while(true){
-                Sleep(10);
+                Sleep(1-clock.getElapsedTime().asMilliseconds());
                 mousePos=sf::Mouse::getPosition();
                 std::cout<<getPosX()<<"\t"<<getPosY()<<"\t"<<getPosZ()<<"\t"<<getAngleH()<<"\t"<<getAngleV()<<std::endl;
                 changeAngleV(-(mousePos.y-1080/2)*getSensivity());
@@ -52,6 +54,7 @@ namespace sf3D{
                 if(sf::Keyboard::isKeyPressed(sf::Keyboard::LControl)){
                     changePosY(-getVelocity());
                 }
+                clock.restart();
             }
         }
 
@@ -70,9 +73,11 @@ namespace sf3D{
         void changeAngleV(float v){
             if(vAngle+v>90.0){
                 vAngle=90.0;
+                return;
             }
             if(vAngle+v<-90.0){
                 vAngle=-90.0;
+                return;
             }
             vAngle+=v;
         }
