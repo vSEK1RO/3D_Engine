@@ -1,4 +1,4 @@
-# 3D_Engine
+<h1 align="center"> 3D_Engine </h1>
 
 ### Скачать текущую версию / Download: [__v0.1__](https://github.com/vSEK1RO/3D_Engine/releases/download/v0.1/src.rar)
 
@@ -14,7 +14,7 @@
 
 :black_square_button: класс для отрисовки ортогональной и перспективной проекций / class for rendering orthogonal and perspective projections 
 
-# Документация / Documentation
+<h1 align="center"> Документация / Documentation </h1>
 
 ### class Camera
 
@@ -24,9 +24,11 @@
 Create an object of the Camera class, and then run the cameraInit() class constructor on a separate thread.
 Next, use the appropriate getter and setter methods to get the camera parameters (coordinates, view angle).
      
+```c#     
      sf3D::Camera cam;
      sf::Thread camera(&sf3D::Camera::cameraInit, &cam);
      camera.launch();
+```
 
 ### class Object
 
