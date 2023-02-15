@@ -1,6 +1,6 @@
 <h1 align="center"> 3D_Engine </h1>
 
-<img src="https://i.imgur.com/O4ETk2b.png"></img>
+<img src="https://i.imgur.com/eoekDwO.png"></img>
 
 ### Скачать текущую версию / Download: [__v0.1__](https://github.com/vSEK1RO/3D_Engine/releases/download/v0.1/src.rar)
 
